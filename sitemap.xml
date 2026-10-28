@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://sjmoon00.github.io/categories/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sjmoon00.github.io/categories/devops/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sjmoon00.github.io/tags/github-actions/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sjmoon00.github.io/tags/github-pages/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sjmoon00.github.io/tags/hugo/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sjmoon00.github.io/posts/hugo-private-to-public/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sjmoon00.github.io/tags/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sjmoon00.github.io/posts/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sjmoon00.github.io/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sjmoon00.github.io/search/</loc>
+  </url><url>
+    <loc>https://sjmoon00.github.io/archives/</loc>
+  </url>
+</urlset>

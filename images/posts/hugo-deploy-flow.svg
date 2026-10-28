@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Hugo 저장소 분리 배포 흐름</title>
+  <desc id="desc">Private 원본 저장소에서 Hugo 빌드를 거쳐 Public GitHub Pages 저장소로 배포되는 구조</desc>
+  <rect width="1200" height="630" fill="#f7f6f3"/>
+  <g font-family="system-ui, sans-serif">
+    <rect x="70" y="205" width="280" height="220" rx="18" fill="#ffffff" stroke="#d8d8d4" stroke-width="2"/>
+    <text x="110" y="270" fill="#222222" font-size="28" font-weight="700">Private</text>
+    <text x="110" y="315" fill="#555555" font-size="22">Hugo source</text>
+    <text x="110" y="352" fill="#777777" font-size="18">Markdown · drafts · CMS</text>
+
+    <rect x="460" y="205" width="280" height="220" rx="18" fill="#ffffff" stroke="#d8d8d4" stroke-width="2"/>
+    <text x="500" y="270" fill="#222222" font-size="28" font-weight="700">GitHub Actions</text>
+    <text x="500" y="315" fill="#555555" font-size="22">Hugo production build</text>
+    <text x="500" y="352" fill="#777777" font-size="18">validate · sync · deploy</text>
+
+    <rect x="850" y="205" width="280" height="220" rx="18" fill="#ffffff" stroke="#d8d8d4" stroke-width="2"/>
+    <text x="890" y="270" fill="#222222" font-size="28" font-weight="700">Public</text>
+    <text x="890" y="315" fill="#555555" font-size="22">GitHub Pages</text>
+    <text x="890" y="352" fill="#777777" font-size="18">HTML · CSS · JS · images</text>
+
+    <path d="M370 315h65" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+    <path d="M425 301l18 14-18 14" fill="none" stroke="#555555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M760 315h65" stroke="#555555" stroke-width="4" stroke-linecap="round"/>
+    <path d="M815 301l18 14-18 14" fill="none" stroke="#555555" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+

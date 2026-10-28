@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="title desc">
+  <title id="title">참조 기반 이미지 공개</title>
+  <desc id="desc">assets 이미지가 공개 글에서 참조될 때만 산출물에 포함되는 흐름</desc>
+  <rect width="800" height="360" fill="#f7f6f3"/>
+  <g fill="none" stroke="#555555" stroke-width="3">
+    <rect x="72" y="100" width="220" height="160" rx="16" fill="#ffffff"/>
+    <rect x="508" y="100" width="220" height="160" rx="16" fill="#ffffff"/>
+    <path d="M332 180h126"/>
+    <path d="M442 163l20 17-20 17" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g fill="#282828" font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="182" y="170" font-size="26" font-weight="700">assets/</text>
+    <text x="182" y="210" font-size="18">원본 이미지</text>
+    <text x="618" y="170" font-size="26" font-weight="700">public/</text>
+    <text x="618" y="210" font-size="18">참조된 파일만</text>
+  </g>
+</svg>
+
