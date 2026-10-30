@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Sveltia CMS - sjmoon00.dev</title>
+  </head>
+  <body>
+    <script>
+      window.CMS_MANUAL_INIT = true;
+    </script>
+    <script src="https://unpkg.com/@sveltia/cms@0.255.1/dist/sveltia-cms.js"></script>
+    <script>
+      CMS.init({
+        config: {
+          load_config_file: false,
+          backend: {
+            name: "github",
+            repo: "sjmoon00/blog-source",
+            branch: "main",
+            commit_messages: {
+              create: "content: add {{path}} via Sveltia CMS",
+              update: "content: update {{path}} via Sveltia CMS",
+              delete: "content: remove {{path}} via Sveltia CMS",
+              uploadMedia: "media: upload {{path}} via Sveltia CMS",
+              deleteMedia: "media: remove {{path}} via Sveltia CMS",
+            },
+          },
+          media_folder: "/assets/images",
+          public_folder: "/images",
+          media_libraries: {
+            all: { slugify_filename: true },
+          },
+          slug: {
+            encoding: "ascii",
+            clean_accents: true,
+          },
+          collections: [
+            {
+              name: "posts",
+              label: "게시글",
+              label_singular: "게시글",
+              folder: "/content/posts",
+              format: "yaml-frontmatter",
+              create: true,
+              slug: "{{fields.slug}}",
+              identifier_field: "title",
+              media_folder: "/assets/images/posts",
+              public_folder: "/images/posts",
+              table_columns: ["title", "draft", "date", "categories"],
+              sortable_fields: {
+                fields: ["date", "title"],
+                default: { field: "date", direction: "descending" },
+              },
+              fields: [
+                {
+                  name: "slug",
+                  label: "URL 슬러그",
+                  widget: "string",
+                  pattern: [
+                    "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+                    "영문 소문자, 숫자, 하이픈만 사용할 수 있습니다.",
+                  ],
+                  hint: "게시 후 URL과 파일명에 사용됩니다. 처음 생성한 뒤에는 가능하면 바꾸지 마세요.",
+                },
+                { name: "title", label: "제목", widget: "string" },
+                {
+                  name: "date",
+                  label: "작성일",
+                  widget: "datetime",
+                  type: "date",
+                  default: "{{now}}",
+                },
+                {
+                  name: "lastmod",
+                  label: "수정일",
+                  widget: "datetime",
+                  type: "date",
+                  default: "{{now}}",
+                },
+                {
+                  name: "draft",
+                  label: "초안",
+                  widget: "boolean",
+                  default: true,
+                  required: false,
+                  hint: "켜져 있으면 프로덕션 사이트에 공개되지 않습니다.",
+                },
+                {
+                  name: "description",
+                  label: "요약",
+                  widget: "text",
+                  minlength: 20,
+                  maxlength: 200,
+                },
+                { name: "tags", label: "태그", widget: "list", required: false },
+                { name: "categories", label: "카테고리", widget: "list", required: false },
+                {
+                  name: "showToc",
+                  label: "목차 표시",
+                  widget: "boolean",
+                  default: true,
+                  required: false,
+                },
+                {
+                  name: "cover",
+                  label: "대표 이미지",
+                  widget: "object",
+                  required: false,
+                  fields: [
+                    {
+                      name: "image",
+                      label: "이미지",
+                      widget: "image",
+                      accept: "image/*",
+                      required: false,
+                    },
+                    { name: "alt", label: "대체 텍스트", widget: "string", required: false },
+                    { name: "caption", label: "설명", widget: "string", required: false },
+                  ],
+                },
+                {
+                  name: "body",
+                  label: "본문",
+                  widget: "richtext",
+                  modes: ["raw", "rich_text"],
+                },
+              ],
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
