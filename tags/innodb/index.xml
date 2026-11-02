@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>InnoDB on sjmoon00.dev</title>
+    <link>https://sjmoon00.github.io/tags/innodb/</link>
+    <description>Recent content in InnoDB on sjmoon00.dev</description>
+    <image>
+      <title>sjmoon00.dev</title>
+      <url>https://sjmoon00.github.io/images/site-default.svg</url>
+      <link>https://sjmoon00.github.io/images/site-default.svg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>ko-KR</language>
+    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sjmoon00.github.io/tags/innodb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>쿼리는 왜 디스크가 아니라 버퍼 풀부터 만날까?</title>
+      <link>https://sjmoon00.github.io/posts/innodb-buffer-pool-dirty-page/</link>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://sjmoon00.github.io/posts/innodb-buffer-pool-dirty-page/</guid>
+      <description>InnoDB 쿼리는 디스크가 아니라 버퍼 풀부터 만난다. 변형 LRU, Free/LRU/Flush List, 더티 페이지가 만들어지는 과정과 함께 지연 쓰기, 휘발성, Partial Page Write 문제를 정리했다.</description>
+    </item>
+  </channel>
+</rss>

@@ -11,8 +11,29 @@
     </image>
     <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sjmoon00.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>InnoDB</title>
+      <link>https://sjmoon00.github.io/tags/innodb/</link>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://sjmoon00.github.io/tags/innodb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MySQL</title>
+      <link>https://sjmoon00.github.io/tags/mysql/</link>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://sjmoon00.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>버퍼풀</title>
+      <link>https://sjmoon00.github.io/tags/%EB%B2%84%ED%8D%BC%ED%92%80/</link>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://sjmoon00.github.io/tags/%EB%B2%84%ED%8D%BC%ED%92%80/</guid>
+      <description></description>
+    </item>
     <item>
       <title>GitHub Actions</title>
       <link>https://sjmoon00.github.io/tags/github-actions/</link>

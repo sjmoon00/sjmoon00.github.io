@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sjmoon00.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>쿼리는 왜 디스크가 아니라 버퍼 풀부터 만날까?</title>
+      <link>https://sjmoon00.github.io/posts/innodb-buffer-pool-dirty-page/</link>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://sjmoon00.github.io/posts/innodb-buffer-pool-dirty-page/</guid>
+      <description>InnoDB 쿼리는 디스크가 아니라 버퍼 풀부터 만난다. 변형 LRU, Free/LRU/Flush List, 더티 페이지가 만들어지는 과정과 함께 지연 쓰기, 휘발성, Partial Page Write 문제를 정리했다.</description>
+    </item>
     <item>
       <title>Hugo 원본과 공개 산출물 저장소 분리하기</title>
       <link>https://sjmoon00.github.io/posts/hugo-private-to-public/</link>
